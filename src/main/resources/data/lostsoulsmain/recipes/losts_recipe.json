@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AHA",
+    "HDH",
+    "AHA"
+  ],
+  "key": {
+    "H": {
+      "item": "hexcasting:charged_amethyst"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    }
+  },
+  "result": {
+    "item": "lostsoulsmain:losts",
+    "count": 1
+  }
+}

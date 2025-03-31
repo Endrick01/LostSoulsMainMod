@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "lostsoulsmain",
+  "version": "${version}",
+  "name": "LostSoulsMain",
+  "description": "Мод для сборки LostSouls добовляющий сюжет",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/lostsoulsmain/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.enk.lostsoulsmain.client.LostSoulsMainModClient"
+    ],
+    "main": [
+      "com.enk.lostsoulsmain.LostSoulsMainMod"
+    ]
+  },
+  "mixins": [
+    "lostsoulsmain.mixins.json",
+    {
+      "config": "lostsoulsmain.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
